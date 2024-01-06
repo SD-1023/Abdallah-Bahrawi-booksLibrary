@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title register
+  body
+    h1 Register
+    form(action="/register", method="POST")
+        label(for="name") Name:
+        input(type="text", id="name" name="name")
+        br
+
+        label(for="email") Email:
+        input(type="text", id="email" name="email")
+        br
+
+        label(for="password") Password:
+        input(type="password", id="password" name="password")
+        br
+
+        button(type="submit") Register
+    
+    a(href="/login")  Login
